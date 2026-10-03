@@ -1,0 +1,81 @@
+Starting Training Loop - Model v1 + Weather (Max Epochs: 300)...
+Epoch 01/300 | Train Loss: 101.8208 | Val Loss: 0.1787
+  -> Model improved! Saved to best_carbon_model_v1_weather.pth
+Epoch 02/300 | Train Loss: 101.8059 | Val Loss: 0.1658
+  -> Model improved! Saved to best_carbon_model_v1_weather.pth
+Epoch 03/300 | Train Loss: 101.7968 | Val Loss: 0.1670
+  -> No improvement. Patience: 1/15
+Epoch 04/300 | Train Loss: 101.7932 | Val Loss: 0.1593
+  -> Model improved! Saved to best_carbon_model_v1_weather.pth
+Epoch 05/300 | Train Loss: 101.7900 | Val Loss: 0.1681
+  -> No improvement. Patience: 1/15
+Epoch 06/300 | Train Loss: 101.7831 | Val Loss: 0.1810
+  -> No improvement. Patience: 2/15
+Epoch 07/300 | Train Loss: 101.7854 | Val Loss: 0.1915
+  -> No improvement. Patience: 3/15
+Epoch 08/300 | Train Loss: 101.7869 | Val Loss: 0.1962
+  -> No improvement. Patience: 4/15
+Epoch 09/300 | Train Loss: 101.7832 | Val Loss: 0.1863
+  -> No improvement. Patience: 5/15
+Epoch 10/300 | Train Loss: 101.7825 | Val Loss: 0.1639
+  -> No improvement. Patience: 6/15
+Epoch 11/300 | Train Loss: 101.7794 | Val Loss: 0.1759
+  -> No improvement. Patience: 7/15
+Epoch 12/300 | Train Loss: 101.7779 | Val Loss: 0.1748
+  -> No improvement. Patience: 8/15
+Epoch 13/300 | Train Loss: 101.7770 | Val Loss: 0.1748
+  -> No improvement. Patience: 9/15
+Epoch 14/300 | Train Loss: 101.7776 | Val Loss: 0.1668
+  -> No improvement. Patience: 10/15
+Epoch 15/300 | Train Loss: 101.7788 | Val Loss: 0.1772
+  -> No improvement. Patience: 11/15
+Epoch 16/300 | Train Loss: 101.7762 | Val Loss: 0.1856
+  -> No improvement. Patience: 12/15
+Epoch 17/300 | Train Loss: 101.7778 | Val Loss: 0.1541
+  -> Model improved! Saved to best_carbon_model_v1_weather.pth
+Epoch 18/300 | Train Loss: 101.7726 | Val Loss: 0.1723
+  -> No improvement. Patience: 1/15
+Epoch 19/300 | Train Loss: 101.7754 | Val Loss: 0.1641
+  -> No improvement. Patience: 2/15
+Epoch 20/300 | Train Loss: 101.7771 | Val Loss: 0.1577
+  -> No improvement. Patience: 3/15
+Epoch 21/300 | Train Loss: 101.7729 | Val Loss: 0.1684
+  -> No improvement. Patience: 4/15
+Epoch 22/300 | Train Loss: 101.7730 | Val Loss: 0.1624
+  -> No improvement. Patience: 5/15
+Epoch 23/300 | Train Loss: 101.7715 | Val Loss: 0.1606
+  -> No improvement. Patience: 6/15
+Epoch 24/300 | Train Loss: 101.7706 | Val Loss: 0.1508
+  -> Model improved! Saved to best_carbon_model_v1_weather.pth
+Epoch 25/300 | Train Loss: 101.7711 | Val Loss: 0.1615
+  -> No improvement. Patience: 1/15
+Epoch 26/300 | Train Loss: 101.7691 | Val Loss: 0.1831
+  -> No improvement. Patience: 2/15
+Epoch 27/300 | Train Loss: 101.7712 | Val Loss: 0.1669
+  -> No improvement. Patience: 3/15
+Epoch 28/300 | Train Loss: 101.7695 | Val Loss: 0.1790
+  -> No improvement. Patience: 4/15
+Epoch 29/300 | Train Loss: 101.7675 | Val Loss: 0.1689
+  -> No improvement. Patience: 5/15
+Epoch 30/300 | Train Loss: 101.7651 | Val Loss: 0.1731
+  -> No improvement. Patience: 6/15
+Epoch 31/300 | Train Loss: 101.7653 | Val Loss: 0.1856
+  -> No improvement. Patience: 7/15
+Epoch 32/300 | Train Loss: 101.7615 | Val Loss: 0.1747
+  -> No improvement. Patience: 8/15
+Epoch 33/300 | Train Loss: 101.7642 | Val Loss: 0.1918
+  -> No improvement. Patience: 9/15
+Epoch 34/300 | Train Loss: 101.7617 | Val Loss: 0.1712
+  -> No improvement. Patience: 10/15
+Epoch 35/300 | Train Loss: 101.7685 | Val Loss: 0.1788
+  -> No improvement. Patience: 11/15
+Epoch 36/300 | Train Loss: 101.7659 | Val Loss: 0.1735
+  -> No improvement. Patience: 12/15
+Epoch 37/300 | Train Loss: 101.7636 | Val Loss: 0.1762
+  -> No improvement. Patience: 13/15
+Epoch 38/300 | Train Loss: 101.7611 | Val Loss: 0.1785
+  -> No improvement. Patience: 14/15
+Epoch 39/300 | Train Loss: 101.7626 | Val Loss: 0.1747
+  -> No improvement. Patience: 15/15
+
+[INFO] Early stopping triggered at epoch 39 to prevent overfitting!

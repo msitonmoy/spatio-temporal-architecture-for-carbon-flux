@@ -1,0 +1,43 @@
+Starting Training Loop for Seed 777 (Max Epochs: 300)...
+Epoch 01/300 | Train Loss: 101.8266 | Val Loss: 0.1690
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 02/300 | Train Loss: 101.8126 | Val Loss: 0.1686
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 03/300 | Train Loss: 101.8106 | Val Loss: 0.1777
+Epoch 04/300 | Train Loss: 101.8085 | Val Loss: 0.1533
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 05/300 | Train Loss: 101.7994 | Val Loss: 0.1442
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 06/300 | Train Loss: 101.7946 | Val Loss: 0.1442
+Epoch 07/300 | Train Loss: 101.7902 | Val Loss: 0.1450
+Epoch 08/300 | Train Loss: 101.7851 | Val Loss: 0.1242
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 09/300 | Train Loss: 101.7870 | Val Loss: 0.1224
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 10/300 | Train Loss: 101.7816 | Val Loss: 0.1085
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 11/300 | Train Loss: 101.7833 | Val Loss: 0.1173
+Epoch 12/300 | Train Loss: 101.7815 | Val Loss: 0.1329
+Epoch 13/300 | Train Loss: 101.7784 | Val Loss: 0.1088
+Epoch 14/300 | Train Loss: 101.7721 | Val Loss: 0.1124
+Epoch 15/300 | Train Loss: 101.7716 | Val Loss: 0.1075
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 16/300 | Train Loss: 101.7686 | Val Loss: 0.1004
+  -> Model improved! Saved to best_csv_model_seed_v2_777.pth
+Epoch 17/300 | Train Loss: 101.7662 | Val Loss: 0.1226
+Epoch 18/300 | Train Loss: 101.7668 | Val Loss: 0.1057
+Epoch 19/300 | Train Loss: 101.7665 | Val Loss: 0.1234
+Epoch 20/300 | Train Loss: 101.7676 | Val Loss: 0.1158
+Epoch 21/300 | Train Loss: 101.7733 | Val Loss: 0.1277
+Epoch 22/300 | Train Loss: 101.7697 | Val Loss: 0.1136
+Epoch 23/300 | Train Loss: 101.7644 | Val Loss: 0.1059
+Epoch 24/300 | Train Loss: 101.7638 | Val Loss: 0.1086
+Epoch 25/300 | Train Loss: 101.7623 | Val Loss: 0.1170
+Epoch 26/300 | Train Loss: 101.7571 | Val Loss: 0.1029
+Epoch 27/300 | Train Loss: 101.7555 | Val Loss: 0.1090
+Epoch 28/300 | Train Loss: 101.7534 | Val Loss: 0.1115
+Epoch 29/300 | Train Loss: 101.7546 | Val Loss: 0.1091
+Epoch 30/300 | Train Loss: 101.7542 | Val Loss: 0.1052
+Epoch 31/300 | Train Loss: 101.7527 | Val Loss: 0.1107
+
+[INFO] Early stopping triggered at epoch 31 to prevent overfitting!

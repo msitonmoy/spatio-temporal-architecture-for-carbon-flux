@@ -1,0 +1,26 @@
+Baseline STGCN Accuracy (NPY):
+For validation:
+
+Seed 42    | RMSE: 13059.5706 | MAE: 5501.6870 | R²: 0.9797 | Acc: 89.90%
+Seed 100   | RMSE: 12914.5109 | MAE: 5408.8750 | R²: 0.9801 | Acc: 90.07%
+Seed 2026  | RMSE: 13000.1458 | MAE: 5480.6724 | R²: 0.9798 | Acc: 89.94%
+Seed 333   | RMSE: 12956.3347 | MAE: 5442.9648 | R²: 0.9800 | Acc: 90.01%
+Seed 777   | RMSE: 12961.5240 | MAE: 5419.3022 | R²: 0.9800 | Acc: 90.05%
+
+Overall RMSE:     12978.4172 ± 48.8161
+Overall MAE:      5450.7002 ± 35.4768
+Overall R² Score: 0.9799 ± 0.0002
+Overall Accuracy: 90.00% ± 0.07%
+
+For Test:
+
+Seed 42    | RMSE: 16026.9528 | MAE: 6211.2661 | R²: 0.9690 | Acc: 89.22%
+Seed 100   | RMSE: 15769.4900 | MAE: 6101.9980 | R²: 0.9699 | Acc: 89.41%
+Seed 2026  | RMSE: 16052.7665 | MAE: 6238.4751 | R²: 0.9689 | Acc: 89.18%
+Seed 333   | RMSE: 16268.8493 | MAE: 6220.7451 | R²: 0.9680 | Acc: 89.21%
+Seed 777   | RMSE: 15798.5326 | MAE: 6153.1738 | R²: 0.9698 | Acc: 89.32%
+
+Overall RMSE:     15983.3182 ± 183.3702
+Overall MAE:      6185.1318 ± 50.4566
+Overall R² Score: 0.9691 ± 0.0007
+Overall Accuracy: 89.27% ± 0.09%

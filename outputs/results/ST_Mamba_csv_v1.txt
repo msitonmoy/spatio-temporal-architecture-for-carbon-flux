@@ -1,0 +1,28 @@
+Validation:
+
+  -> Seed   42 | R2: 0.9808 | Acc: 89.38% | MAE: 5786.58
+  -> Seed  100 | R2: 0.9801 | Acc: 89.55% | MAE: 5695.17
+  -> Seed 2026 | R2: 0.9803 | Acc: 89.77% | MAE: 5573.91
+  -> Seed  333 | R2: 0.9812 | Acc: 89.83% | MAE: 5538.02
+  -> Seed  777 | R2: 0.9801 | Acc: 89.41% | MAE: 5768.90
+
+Mean Absolute Error (MAE) : 5672.51 ± 100.62 Metric Tonnes
+Root Mean Squared (RMSE)  : 12782.78 ± 145.08 Metric Tonnes
+R-squared (R2) Score      : 0.9805 ± 0.0004
+Overall Model Accuracy    : 89.59% ± 0.18%
+Global Average Carbon     : 54480.38 Metric Tonnes
+
+
+Test:
+
+  -> Seed   42 | R2: 0.9550 | Acc: 86.09% | MAE: 8015.65
+  -> Seed  100 | R2: 0.9433 | Acc: 84.47% | MAE: 8948.37
+  -> Seed 2026 | R2: 0.7747 | Acc: 78.32% | MAE: 12492.84
+  -> Seed  333 | R2: 0.9597 | Acc: 86.52% | MAE: 7771.70
+  -> Seed  777 | R2: 0.9569 | Acc: 86.02% | MAE: 8055.53
+
+Mean Absolute Error (MAE) : 9056.82 ± 1763.87 Metric Tonnes
+Root Mean Squared (RMSE)  : 24258.52 ± 9530.49 Metric Tonnes
+R-squared (R2) Score      : 0.9179 ± 0.0718
+Overall Model Accuracy    : 84.29% ± 3.06%
+Global Average Carbon     : 57635.70 Metric Tonnes

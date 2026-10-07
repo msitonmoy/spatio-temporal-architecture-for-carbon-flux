@@ -75,15 +75,14 @@ def evaluate_ensemble():
         print(f"  -> Seed {seed:4d} | R2: {r2:.4f} | Acc: {acc:.2f}% | MAE: {mae:.2f}")
 
     # Calculate final averages and standard deviations (The academic gold standard)
-    print("\n" + "="*55)
-    print("   MODEL V2 (WEATHER) ENSEMBLE METRICS (5 SEEDS)")
-    print("="*55)
+
+    print(" MODEL V2 (WEATHER) ENSEMBLE METRICS (5 SEEDS)")
+    
     print(f"Mean Absolute Error (MAE) : {np.mean(metrics['mae']):.2f} ± {np.std(metrics['mae']):.2f} Metric Tonnes")
     print(f"Root Mean Squared (RMSE)  : {np.mean(metrics['rmse']):.2f} ± {np.std(metrics['rmse']):.2f} Metric Tonnes")
     print(f"R-squared (R2) Score      : {np.mean(metrics['r2']):.4f} ± {np.std(metrics['r2']):.4f}")
     print(f"Overall Model Accuracy    : {np.mean(metrics['acc']):.2f}% ± {np.std(metrics['acc']):.2f}%")
     print(f"Global Average Carbon     : {global_mean:.2f} Metric Tonnes")
-    print("="*55)
 
 if __name__ == "__main__":
     evaluate_ensemble()

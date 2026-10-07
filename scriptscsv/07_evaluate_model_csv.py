@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# --- Helper function to import previous scripts ---
+# Helper function to import previous scripts
 def load_script_module(module_name, file_path):
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     module = importlib.util.module_from_spec(spec)
@@ -78,9 +78,8 @@ def evaluate_ensemble():
         print(f"  -> Seed {seed:>4} | R2: {r2:.4f} | Acc: {accuracy:.2f}% | MAE: {mae:.2f}")
 
     # Calculate Mean and Standard Deviation across the ensemble
-    print("\n" + "="*55)
-    print("      UNIVARIATE (.CSV) ENSEMBLE METRICS (5 SEEDS)")
-    print("="*55)
+
+    print("UNIVARIATE (.CSV) ENSEMBLE METRICS (5 SEEDS)")
     print(f"Mean Absolute Error (MAE) : {np.mean(metrics['mae']):.2f} ± {np.std(metrics['mae']):.2f} Metric Tonnes")
     print(f"Root Mean Squared (RMSE)  : {np.mean(metrics['rmse']):.2f} ± {np.std(metrics['rmse']):.2f} Metric Tonnes")
     print(f"R-squared (R2) Score      : {np.mean(metrics['r2']):.4f} ± {np.std(metrics['r2']):.4f}")

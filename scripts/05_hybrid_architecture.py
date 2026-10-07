@@ -9,7 +9,7 @@ from mamba_ssm import Mamba
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# --- 1. Load the Locked Spatial Map ---
+# Load the Locked Spatial Map
 def load_adj_matrix():
     pkl_path = BASE_DIR / "outputs" / "causal_matrices" / "pcmci_results.pkl"
     with open(pkl_path, "rb") as f:
@@ -21,7 +21,7 @@ def load_adj_matrix():
     
     return torch.tensor(adj_2d, dtype=torch.float32)
 
-# --- 2. Model v1: Rigid Spatial Layer ---
+# Model v1: Rigid Spatial Layer
 class GraphConvolution(nn.Module):
     """
     Standard GCN layer mapping spatial relationships between nodes.
@@ -39,7 +39,7 @@ class GraphConvolution(nn.Module):
         output = torch.einsum('ij,bsjk->bsik', self.adj_matrix, support)
         return torch.relu(output)
 
-# --- 3. Model v2: Gated Spatial Layer ---
+# Model v2: Gated Spatial Layer
 class GatedCausalGCNLayer(nn.Module):
     """
     Gated GCN layer with PROTECTED SELF-LOOPS.
@@ -65,17 +65,17 @@ class GatedCausalGCNLayer(nn.Module):
         out = torch.einsum('vw,btwf->btvf', dynamic_adj, h)
         return torch.relu(out)
 
-# --- 4. The Full Hybrid Architecture ---
+# The Full Hybrid Architecture 
 class SpatioTemporalCarbonModel(nn.Module):
     def __init__(self, adj_matrix, num_nodes=255, window_size=14):
         super().__init__()
         self.num_nodes = num_nodes
         
-        # --- MODEL V1 (Rigid Baseline) ---
+        # MODEL V1 (Rigid Baseline) 
         # self.gcn1 = GraphConvolution(in_features=4, out_features=8, adj_matrix=adj_matrix)
         # self.gcn2 = GraphConvolution(in_features=8, out_features=16, adj_matrix=adj_matrix)
         
-        # --- MODEL V2 (Gated Learnable) ---
+        # MODEL V2 (Gated Learnable)
         self.gcn1 = GatedCausalGCNLayer(in_features=4, out_features=8, adj_matrix=adj_matrix)
         self.gcn2 = GatedCausalGCNLayer(in_features=8, out_features=16, adj_matrix=adj_matrix)
         
@@ -98,23 +98,23 @@ class SpatioTemporalCarbonModel(nn.Module):
     def forward(self, x):
         # x shape for weather is already [Batch, 14, 255, 4]. No unsqueeze needed.
         
-        # --- Phase 1: Spatial Message Passing ---
+        # Phase 1: Spatial Message Passing
         x_gcn = self.gcn1(x)
         x_gcn = self.gcn2(x_gcn)
         
         batch_size, seq_len, num_nodes, out_features = x_gcn.shape
         x_flat = x_gcn.reshape(batch_size, seq_len, -1) 
         
-        # --- Phase 2: Apply Attention ---
+        # Phase 2: Apply Attention
         attn_out, attn_weights = self.attention(x_flat, x_flat, x_flat)
         
-        # --- Phase 3: Temporal Sequence Processing (Mamba) ---
+        # Phase 3: Temporal Sequence Processing (Mamba)
         attn_normalized = self.layer_norm(attn_out)
         memory_out = self.temporal_memory(attn_normalized)
         
         seq_out = memory_out[:, -1, :]
         
-        # 4. Predict Day 15 Carbon values
+        # Predict Day 15 Carbon values
         predictions = self.predictor(seq_out)
         return predictions, attn_weights
 

@@ -15,8 +15,10 @@ Traditional Spatio-Temporal Graph Convolutional Networks (STGCN) rely on static 
 ## Benchmark Results (14-Day Window)
 The models were evaluated deterministically across 5 random seeds (42, 100, 2026, 333, 777) on both univariate Carbon (CSV) and multivariate Weather (NPY) datasets. The dataset has been splitted into training, validation and test section. From 01-01-2023 to 30-04-2025 that's splitted into training data. Then from 01-05-2025 to 31-08-2025 is the validation data and finally 01-09-2025 to 31-12-2025 is the test data. The values that are given below are overall from the 5 random seeds
 
+## Validation Performance
+
 | Model | Dataset | RMSE | MAE | R² Score | Accuracy |
-**Accuracy and Scores for the Validation data:**
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | **STGCN Baseline** | Carbon (CSV) | 14014.39 ± 752.71 | 6010.07 ± 496.99 | 0.9765 ± 0.0026 | 88.97% ± 0.91% |
 | **ST-Mamba Version1 (Ours)** | Carbon (CSV) | 12782.78 ± 145.08 | 5672.51 ± 100.62 | 0.9805 ± 0.0004 | 89.59% ± 0.18% |
 | **ST-Mamba Version2 (Ours)** | Carbon (CSV) | 12835.40 ± 276.10 | 5547.12 ± 153.87 | 0.9803 ± 0.0009 | 89.82% ± 0.28% |
@@ -24,7 +26,9 @@ The models were evaluated deterministically across 5 random seeds (42, 100, 2026
 | **ST-Mamba Version1(Ours)** | Weather (NPY) | 14635.23 ± 256.43 | 6729.48 ± 208.48 | 0.9744 ± 0.0009 | 87.65% ± 0.38%% |
 | **ST-Mamba Version2(Ours)** | Weather (NPY) | 6810.57 ± 376.65 | 14610.71 ± 662.29 | 0.9745 ± 0.0023 | 87.50% ± 0.69%% |
 
-**Accuracy and Scores for the Test data:**
+## Test Data Performance
+| Model | Dataset | RMSE | MAE | R² Score | Accuracy |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | **STGCN Baseline** | Carbon (CSV) | 17004.46 ± 774.21 | 6734.7319 ± 461.01 | 0.9650 ± 0.0033 | 88.31% ± 0.80% |
 | **ST-Mamba Version1 (Ours)** | Carbon (CSV) | 24258.52 ± 9530.49 | 9056.82 ± 1763.87 | 0.9179 ± 0.0718 | 84.29% ± 3.06% |
 | **ST-Mamba Version2 (Ours)** | Carbon (CSV) | 18210.21 ± 227.75 | 7576.34 ± 105.26 | 0.9599 ± 0.0010 | 86.85% ± 0.18% |
